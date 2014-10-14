@@ -1,10 +1,13 @@
 package coin
 
-import "math/rand"
+import (
+	"math/rand"
+	"time"
+)
 
 func New() *Coin {
 	coin := new(Coin)
-	coin.rand = rand.New(rand.NewSource(99))
+	coin.rand = rand.New(rand.NewSource(time.Now().UnixNano()))
 	return coin
 }
 
