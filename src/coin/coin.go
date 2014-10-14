@@ -20,9 +20,9 @@ const (
 
 func (f Face) String() string {
 	if f == Heads {
-		return "Heads"
+		return "H"
 	} else {
-		return "Tails"
+		return "T"
 	}
 }
 
